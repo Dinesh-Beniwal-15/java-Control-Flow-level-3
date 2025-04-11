@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+class ArmstrongNumber {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter number: ");
+        int number = input.nextInt(); // Read user input
+        input.close(); // Close scanner to prevent resource leaks
+
+        int sum = 0;
+        int originalnumber = number;
+        int numDigits = String.valueOf(number).length(); // Count number of digits
+
+        while (originalnumber != 0) {
+            int remainder = originalnumber % 10; // Extract last digit
+            sum += (int) Math.pow(remainder, numDigits); // Fix: Explicit casting to int
+            originalnumber /= 10; // Remove last digit
+        }
+
+        // Check if sum equals the original number
+        if (number == sum) {
+            System.out.println("It is an Armstrong Number.");
+        } else {
+            System.out.println("It is not an Armstrong Number.");
+        }
+    }
+}

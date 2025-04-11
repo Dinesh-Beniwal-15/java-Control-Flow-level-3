@@ -1,0 +1,40 @@
+import java.util.Scanner; // Import Scanner class for user input
+
+class CalculatorSwitch {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in); // Create Scanner object to take input
+        
+        System.out.print("Enter first number:");
+        int number1 = input.nextInt(); // Read first integer input
+        
+        System.out.print("Enter second number:");
+        int number2 = input.nextInt(); // Read second integer input
+        
+        System.out.print("Enter operator (+, -, *, /):");
+        String op = input.next(); // Read operator as string
+        
+        // Switch case to perform the selected operation
+        switch (op) {
+            case "+":
+                System.out.print("Addition of " + number1 + " and " + number2 + " is " + (number1 + number2));
+                break;
+            case "-":
+                System.out.print("Subtraction of " + number1 + " and " + number2 + " is " + (number1 - number2));
+                break;
+            case "*":
+                System.out.print("Multiplication of " + number1 + " and " + number2 + " is " + (number1 * number2));
+                break;
+            case "/":
+                if (number2 != 0) {
+                    System.out.print("Division of " + number1 + " and " + number2 + " is " + (number1 / number2));
+                } else {
+                    System.out.print("Error: Division by zero is not allowed");
+                }
+                break;
+            default:
+                System.out.print("Invalid Operator");
+        }
+        
+        input.close(); // Close the Scanner to prevent resource leak
+    }
+}

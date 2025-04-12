@@ -8,7 +8,7 @@ class AbundantNumber {
         int number = input.nextInt(); // Read an integer input from the user
         
         int originalNumber = number; // Store the original number for later use
-        int sum = 0; // Variable to store sum of divisors
+        int sum = 0; // Variable to store sum of divisors 
         
         // Loop to find the sum of proper divisors
         for (int i = 1; i < number; i++) {

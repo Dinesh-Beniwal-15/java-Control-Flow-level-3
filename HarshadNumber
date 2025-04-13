@@ -1,0 +1,30 @@
+import java.util.Scanner; // Import Scanner class for user input
+
+class HarshadNumber {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in); // Create Scanner object to take input
+        
+        System.out.print("Enter a number:");
+        int number = input.nextInt(); // Read an integer input from the user
+        
+        int originalNumber = number; // Store the original number for later use
+        int sum = 0; // Variable to store sum of digits
+        int remainder = 0; // Variable to store the remainder
+        
+        // Loop to calculate the sum of digits
+        while (number != 0) {
+            remainder = number % 10; // Extract last digit
+            sum = sum + remainder; // Add digit to sum
+            number = number / 10; // Remove last digit
+        }
+        
+        // Check if the number is a Harshad Number
+        if (originalNumber % sum == 0) {
+            System.out.print("It is a Harshad Number");
+        } else {
+            System.out.print("It is not a Harshad Number");
+        }
+        
+        input.close(); // Close the Scanner to prevent resource leak
+    }
+}

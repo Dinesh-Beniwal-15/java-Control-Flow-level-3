@@ -1,0 +1,36 @@
+import java.util.Scanner; // Import Scanner class for user input
+
+class LeapYear { // Class definition
+    public static void main(String[] args) { // Main method
+        Scanner input = new Scanner(System.in); // Create Scanner object to take input from the user
+
+        System.out.println("Enter Year:"); // Prompt user to enter a year
+        int year = input.nextInt(); // Read the input year
+
+        // Check if the entered year is 1582 or later (Gregorian calendar starts from 1582)
+        if (year >= 1582) {
+            // A year is a leap year if it is divisible by 400
+            if (year % 400 == 0) {
+                System.out.println(year + " is a leap year.");
+            }
+            // If not divisible by 400, but divisible by 100, it's not a leap year
+            else if (year % 100 == 0) {
+                System.out.println(year + " is not a leap year.");
+            }
+            // If not divisible by 100, but divisible by 4, it's a leap year
+            else if (year % 4 == 0) {
+                System.out.println(year + " is a leap year.");
+            }
+            // Otherwise, it's not a leap year
+            else {
+                System.out.println(year + " is not a leap year.");
+            }
+        }
+        // If the year is less than 1582, print a message to enter a valid year
+        else {
+            System.out.println("Enter year >= 1582");
+        }
+
+        input.close(); // Close the Scanner object to prevent resource leaks
+    }
+}

@@ -1,0 +1,32 @@
+import java.util.Scanner; // Import Scanner class for user input
+
+class PrimeNumberCheck { // Class definition
+    public static void main(String[] args) { // Main method
+        Scanner input = new Scanner(System.in); // Create Scanner object for user input
+
+        System.out.print("Enter a number: "); // Prompt user for input
+        int number = input.nextInt(); // Read the input number
+
+        boolean isPrime = true; // Initialize a boolean variable to track if the number is prime
+
+        if (number <= 1) { // Check if number is less than or equal to 1 (not prime)
+            isPrime = false;
+        } else {
+            for (int i = 2; i < number; i++) { // Loop from 2 to number - 1 to check for factors
+                if (number % i == 0) { // If number is divisible by any i, it's not prime
+                    isPrime = false;
+                    break; // Exit loop early if a factor is found
+                }
+            }
+        }
+
+        // Display whether the number is prime or not
+        if (isPrime) {
+            System.out.println(number + " is a prime number.");
+        } else {
+            System.out.println(number + " is not a prime number.");
+        }
+
+        input.close(); // Close the Scanner object to prevent resource leaks
+    }
+}

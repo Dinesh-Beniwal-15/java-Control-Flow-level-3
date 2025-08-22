@@ -10,7 +10,7 @@ class AbundantNumber {
         int originalNumber = number; // Store the original number for later use
         int sum = 0; // Variable to store sum of divisors 
         
-        // Loop to find the sum of proper divisors
+        // Loop to find the sum of proper divisors 
         for (int i = 1; i < number; i++) {
             if (number % i == 0) { // Check if i is a divisor of number
                 sum += i; // Add divisor to sum

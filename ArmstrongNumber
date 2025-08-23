@@ -11,7 +11,7 @@ class ArmstrongNumber {
         int originalnumber = number; 
         int numDigits = String.valueOf(number).length(); // Count number of digits 
  
-        while (originalnumber != 0) {
+        while (originalnumber != 0) { 
             int remainder = originalnumber % 10; // Extract last digit 
             sum += (int) Math.pow(remainder, numDigits); // Fix: Explicit casting to int
             originalnumber /= 10; // Remove last digit

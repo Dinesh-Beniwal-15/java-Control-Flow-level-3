@@ -8,7 +8,7 @@ class ArmstrongNumber {
         input.close(); // Close scanner to prevent resource leaks
 
         int sum = 0;   
-        int originalnumber = number;
+        int originalnumber = number; 
         int numDigits = String.valueOf(number).length(); // Count number of digits 
  
         while (originalnumber != 0) {

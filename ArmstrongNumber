@@ -9,7 +9,7 @@ class ArmstrongNumber {
 
         int sum = 0;   
         int originalnumber = number;
-        int numDigits = String.valueOf(number).length(); // Count number of digits
+        int numDigits = String.valueOf(number).length(); // Count number of digits 
  
         while (originalnumber != 0) {
             int remainder = originalnumber % 10; // Extract last digit

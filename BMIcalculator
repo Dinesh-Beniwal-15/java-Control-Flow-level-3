@@ -11,7 +11,7 @@ class BMIcalculator {
         double heightcm = input.nextDouble(); // Read height input in cm
         
         double heightm = heightcm / 100.0; // Convert height to meters  
-        double BMI = weight / (heightm * heightm); // Calculate BMI
+        double BMI = weight / (heightm * heightm); // Calculate BMI 
         
         // Determine BMI category and display result
         if (BMI <= 18.4) 

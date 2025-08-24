@@ -10,7 +10,7 @@ class BMIcalculator {
         System.out.print("Enter height(cm) of the person:"); 
         double heightcm = input.nextDouble(); // Read height input in cm
         
-        double heightm = heightcm / 100.0; // Convert height to meters
+        double heightm = heightcm / 100.0; // Convert height to meters 
         double BMI = weight / (heightm * heightm); // Calculate BMI
         
         // Determine BMI category and display result

@@ -5,7 +5,7 @@ class PrimeNumberCheck { // Class definition
         Scanner input = new  Scanner(System.in); // Create Scanner object for user input 
  
         System.out.print("Enter a number: "); // Prompt user for input
-        int number = input.nextInt(); // Read the input number 
+        int number = input.nextInt(); // Read the input number  
 
         boolean isPrime = true; // Initialize a boolean variable to track if the number is prime
 

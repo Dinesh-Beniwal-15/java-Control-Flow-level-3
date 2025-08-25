@@ -2,7 +2,7 @@ import java.util.Scanner; // Import Scanner class for user input
 
 class PrimeNumberCheck { // Class definition
     public static void main(String[] args) { // Main method
-        Scanner input = new Scanner(System.in); // Create Scanner object for user input
+        Scanner input = new  Scanner(System.in); // Create Scanner object for user input
 
         System.out.print("Enter a number: "); // Prompt user for input
         int number = input.nextInt(); // Read the input number

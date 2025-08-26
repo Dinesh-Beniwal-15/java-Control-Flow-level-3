@@ -7,7 +7,7 @@ class CalculatorSwitch {
         System.out.print("Enter first number:");
         int number1 = input.nextInt(); // Read first integer input
         
-        System.out.print("Enter second number:"); 
+        System.out.print("Enter second number:");  
         int number2 = input.nextInt(); // Read second integer input 
          
         System.out.print("Enter operator (+, -, *, /):"); 

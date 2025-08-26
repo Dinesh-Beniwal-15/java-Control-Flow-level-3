@@ -3,7 +3,7 @@ import java.util.Scanner; // Import Scanner class for user input
 class CalculatorSwitch {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in); // Create Scanner object to take input
-        
+         
         System.out.print("Enter first number:");
         int number1 = input.nextInt(); // Read first integer input 
         

@@ -13,7 +13,7 @@ class CalculatorSwitch {
         System.out.print("Enter operator (+, -, *, /):");
         String op = input.next(); // Read operator as string 
         
-        // Switch case to perform the selected operation
+        // Switch case to perform the selected operation 
         switch (op) {
             case "+":
                 System.out.print("Addition of " + number1 + " and " + number2 + " is " + (number1 + number2));

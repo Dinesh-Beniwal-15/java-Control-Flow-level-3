@@ -10,7 +10,7 @@ class CalculatorSwitch {
         System.out.print("Enter second number:"); 
         int number2 = input.nextInt(); // Read second integer input 
          
-        System.out.print("Enter operator (+, -, *, /):");
+        System.out.print("Enter operator (+, -, *, /):"); 
         String op = input.next(); // Read operator as string 
         
         // Switch case to perform the selected operation 

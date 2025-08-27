@@ -4,7 +4,7 @@ class HarshadNumber {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in); // Create Scanner object to take input
         
-        System.out.print("Enter a number:");  
+        System.out.print("Enter a number:");   
         int number = input.nextInt(); // Read an integer input from the user
             
         int originalNumber = number; // Store the original number for later use

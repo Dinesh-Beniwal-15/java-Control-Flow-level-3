@@ -1,5 +1,5 @@
 import java.util.Scanner; // Import Scanner class for user input
-
+ 
 class HarshadNumber {
     public static void main(String[] args) { 
         Scanner input = new Scanner(System.in); // Create Scanner object to take input

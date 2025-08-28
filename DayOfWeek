@@ -8,7 +8,7 @@ public class DayOfWeek {
         System.out.print("Enter month (1-12): ");
         int m = scanner.nextInt(); // Month
         
-        // Prompt user for day input
+        // Prompt user for day input 
         System.out.print("Enter day: ");
         int d = scanner.nextInt(); // Day
         

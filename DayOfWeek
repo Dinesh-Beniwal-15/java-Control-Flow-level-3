@@ -12,7 +12,7 @@ public class DayOfWeek {
         System.out.print("Enter day: "); 
         int d = scanner.nextInt(); // Day
          
-        // Prompt user for year input
+        // Prompt user for year input 
         System.out.print("Enter year: ");
         int y = scanner.nextInt(); // Year
         

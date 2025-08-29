@@ -9,7 +9,7 @@ class LeapYear { // Class definition
  
         // Check if the entered year is 1582 or later (Gregorian calendar starts from 1582)
         if (year >= 1582) {
-            // A year is a leap year if it is divisible by 400 
+            // A year is a leap year if it is divisible by 400  
             if (year % 400 == 0) {
                 System.out.println(year + " is a leap year.");
             }

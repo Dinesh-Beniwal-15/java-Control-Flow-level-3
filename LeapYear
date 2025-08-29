@@ -11,7 +11,7 @@ class LeapYear { // Class definition
         if (year >= 1582) {
             // A year is a leap year if it is divisible by 400  
             if (year % 400 == 0) { 
-                System.out.println(year + " is a leap year.");
+                System.out.println(year + " is a leap year."); 
             }
             // If not divisible by 400, but divisible by 100, it's not a leap year
             else if (year % 100 == 0) {

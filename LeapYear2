@@ -13,7 +13,7 @@ class LeapYear2 { // Class definition
                 System.out.println(year + " is a leap year.");
             }
             // Otherwise, it's not a leap year
-            else {
+            else { 
                 System.out.println(year + " is not a leap year.");
             }
         }

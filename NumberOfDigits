@@ -6,7 +6,7 @@ class NumberOfDigits {
         
         System.out.print("Enter a number:");   
         int number = input.nextInt(); // Read an integer input from the user
-         
+          
         int count = 0; // Variable to store the number of digits
         int originalNumber = number; // Store the original number for later use
         

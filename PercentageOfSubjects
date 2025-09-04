@@ -8,7 +8,7 @@ class PercentageOfSubjects { // Class definition
         System.out.println("Enter Chemistry Marks:");
         int che = input.nextInt(); // Read Chemistry marks
 		  
-        // Prompt the user to enter Physics marks
+        // Prompt the user to enter Physics marks 
 		System.out.println("Enter Physics Marks:");
         int phy = input.nextInt(); // Read Physics marks
 		
